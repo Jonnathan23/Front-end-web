@@ -1,16 +1,22 @@
 @import url(navegador.css);
 
+.tienda {
+    width: 80%;
+    margin: auto;
+}
+
 /** Grid */
 .grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
+    gap: 1rem;
+
 }
 
 @media (min-width: 480px) {
     .grid {
-        display: grid;
         grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
     }
 }
 
@@ -24,8 +30,6 @@
 .producto__imagen {
     width: 100%;
 }
-
-.producto__informacion {}
 
 .producto__nombre {
     font-size: 4rem;
